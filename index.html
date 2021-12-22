@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- AOS animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>ToanThinhPhat</title>
+    <link rel="stylesheet" href="./assets/style/base.css" />
+
+    <link rel="stylesheet" href="./assets/style/main.css" />
+    <link rel="stylesheet" href="./assets/style/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="" class="header__logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="header__nav collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item header__nav-item">
+                <a
+                  class="nav-link header__nav-link active"
+                  aria-current="page"
+                  href="#introduction"
+                  >Giới thiệu</a
+                >
+              </li>
+
+              <li class="nav-item header__nav-item">
+                <a class="nav-link header__nav-link" href="#product">Dự án</a>
+              </li>
+              <li class="nav-item header__nav-item">
+                <a class="nav-link header__nav-link" href="#ourmember"
+                  >Nhân sự</a
+                >
+              </li>
+              <li class="nav-item header__nav-item">
+                <a class="nav-link header__nav-link" href="#news">Tin tức</a>
+              </li>
+
+              <li class="nav-item header__nav-item">
+                <a class="nav-link header__nav-link" href="#section__contact"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/carousel-1.jpg"
+              class="d-block w-100 carousel-img"
+              alt="carousel-1"
+            />
+            <div class="carousel-caption d-none d-md-block main__carousel-text">
+              <h5>Kiến trúc hiện đại</h5>
+              <p>Sản phẩm của những kiến trúc sư tài năng</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/carousel-2.jpg"
+              class="d-block w-100 carousel-img"
+              alt="carousel-2"
+            />
+            <div class="carousel-caption d-none d-md-block main__carousel-text">
+              <h5>Nội thất sang trọng</h5>
+              <p>Đội ngũ thiết kế kinh nghiệm</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/carousel-3.jpg"
+              class="d-block w-100 carousel-img"
+              alt="carousel-3"
+            />
+            <div class="carousel-caption d-none d-md-block main__carousel-text">
+              <h5>Hệ thống lưới điện rộng khắp</h5>
+              <p>Nơi nào có điện nơi đó phát triển</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="main__featured" id="introduction">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="featured__img">
+                <h2><i>TTP</i></h2>
+                <img
+                  src="./assets/images/—Pngtree—city urban architecture high-rise building_3953842.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="featured__detail">
+                <h2>Về chúng tôi</h2>
+                <div class="detail__nav">
+                  <ui class="detail__nav-list">
+                    <li class="detail__nav-item nav__product-featured active">
+                      <a href="#tab1">Cơ bản về công ty</a>
+                    </li>
+                    <li class="detail__nav-item nav__product-size">
+                      <a href="#tab2">Dịch vụ cung cấp</a>
+                    </li>
+                  </ui>
+                </div>
+                <div class="detail__content">
+                  <ui class="detail__content-list">
+                    <li class="detail__content-item active">
+                      <p>
+                        Toàn Thịnh Phát là một công ty cổ phần, có trụ sở chính
+                        tại số 75, đường Nguyễn Công Trứ, phường Tân An , thị xã
+                        La Gi , tỉnh Bình Thuận. Là đơn vị có tư cách pháp nhân
+                        , đăng ký kinh doanh theo pháp luật
+                      </p>
+                      <p>
+                        Với phương châm
+                        <span
+                          >"Khách hàng là tài sản quý giá của doanh nghiệp, là
+                          ký do duy nhất để doanh nghiệp tồn tại và phát
+                          triển"</span
+                        >. Chúng tôi luôn lắng nghe , luôn thấu hiểu những nhu
+                        cầu của khách hàng. Để từ đó , áp dụng tất cả những tư
+                        duy, kỹ năng và kinh nghiệm của mình để nhằm giải quyết
+                        tối ưu những nhu cầu đó
+                      </p>
+                    </li>
+                    <li class="detail__content-item">
+                      <p>
+                        - Khảo sát, lập dự án báo cáo kinh tế kỹ thuật<br />
+                        - Thiết kế kiến trúc, kết cấu<br />
+                        - Giám sát kỹ thuật thi công<br />
+                        - Tư vấn đầy tư xây dựng đường dây hạ thế, trung thế ,
+                        hệ thống điện chiếu sáng công lộ và trạm biến áp<br />
+                        - Tư vấn đấu thầu , lập hồ sơ đấu thầu, lựa chọn nhà
+                        thầu<br />
+                        - Thẩm tra hồ sơ thiết kế bản vẽ thi công và dự toán các
+                        công trình: Dân dụng, công nghiệp, giao thông, hạ tầng
+                        kỹ thuật và hoạt động thương mại, dịch vụ khách
+                      </p>
+                    </li>
+                  </ui>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="featured__detail-btn">
+                    <div class="btn-container">
+                      <button class="btn-container__btn">Xem thêm</button>
+                      <div class="btn-container__background"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__newArrival" id="product">
+        <div class="container">
+          <h2 class="collection__header">
+            <a href="#" class="collection__header-link"> Dự án tiêu biểu </a>
+          </h2>
+          <div class="collection__product" style="overflow-x: hidden">
+            <div class="row">
+              <div class="col-lg-4 col-md-4" data-aos="zoom-in-up">
+                <a href="#">
+                  <div class="product__area">
+                    <div class="product__IMG">
+                      <img
+                        src="./assets/images/productImgs/building-2654823_1920.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__detail">
+                      <a href="#" class="product__name"
+                        >Bệnh viện đa khoa Đức lập, Long An
+                      </a>
+                      <div class="product__price">
+                        <p>
+                          Giá trị hợp đồng:
+                          <span class="product__originPrice">
+                            7,132,005,000₫</span
+                          >
+                        </p>
+                      </div>
+                      <p class="product__investor">
+                        Chủ đầu tư: Công ty TNHH Bệnh viện đa khoa Đức lập Huyện
+                        Đức Hòa - tỉnh Long An
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4" data-aos="zoom-in-up">
+                <a href="#">
+                  <div class="product__area">
+                    <div class="product__IMG">
+                      <img
+                        src="./assets/images/productImgs/photo-1624026676760-53603406ac94.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__detail">
+                      <a href="#" class="product__name"
+                        >Nhà máy xay xát, lau bóng gạo Bình Phú Thiên
+                      </a>
+                      <div class="product__price">
+                        <p>
+                          Giá trị hợp đồng:<span class="product__originPrice">
+                            11,907,543,217₫</span
+                          >
+                        </p>
+                      </div>
+
+                      <p class="product__investor">
+                        Chủ đầu tư: Công ty TNHH MTV Xuất nhập khẩu Bình Phú
+                        Thiên , Xã Nhơn Hội - huyện An Phú - tỉnh An Giang
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4" data-aos="zoom-in-up">
+                <a href="#">
+                  <div class="product__area">
+                    <div class="product__IMG">
+                      <img
+                        src="./assets/images/productImgs/photo-1552783160-27bfdb2625d5.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__detail">
+                      <a href="#" class="product__name"
+                        >Nhà máy xi titan Bình Thuận
+                      </a>
+                      <div class="product__price">
+                        <p>
+                          Giá trị hợp đồng:<span class="product__originPrice">
+                            1,420,000,000₫</span
+                          >
+                        </p>
+                      </div>
+                      <p class="product__investor">
+                        Cty CP Công nghiệp khoáng sản Bình Thuận, xã Thắng Hải
+                        huyện Hàm Tân
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4" data-aos="zoom-in-up">
+                <a href="#">
+                  <div class="product__area">
+                    <div class="product__IMG">
+                      <img
+                        src="./assets/images/productImgs/photo-1518253042715-a2534e1b0a7b.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__detail">
+                      <a href="#" class="product__name"
+                        >Nhà máy chế tạo gạch tuyen Bidico
+                      </a>
+                      <div class="product__price">
+                        <p>
+                          Giá trị hợp đồng:<span class="product__originPrice">
+                            850,000,000₫</span
+                          >
+                        </p>
+                      </div>
+                      <p class="product__investor">
+                        Chủ đầu tư: CTY CP Đầu tư và phát triển Công nghệ Bảo
+                        Thư ,xã Thắng Hải huyện Hàm Tân
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4" data-aos="zoom-in-up">
+                <a href="#">
+                  <div class="product__area">
+                    <div class="product__IMG">
+                      <img
+                        src="./assets/images/productImgs/photo-1446960040713-06c33df11426.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__detail">
+                      <a href="#" class="product__name"
+                        >Đầu tư xây dựng mới Xí nghiệp chăn nuôi Vissan Bình
+                        Dương
+                      </a>
+                      <div class="product__price">
+                        <p>
+                          Giá trị hợp đồng:<span class="product__originPrice">
+                            2,253,000,000₫</span
+                          >
+                        </p>
+                      </div>
+                      <p class="product__investor">
+                        Chủ đầu tư: Công ty cổ phần Việt Nam Kỹ nghệ Súc Sản 420
+                        Nơ Trang Long ,P13 , Q.Bình Thạnh,Tp.HCM
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4" data-aos="zoom-in-up">
+                <a href="#">
+                  <div class="product__area">
+                    <div class="product__IMG">
+                      <img
+                        src="./assets/images/productImgs/large-home-gf5cb212e4_1280.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="product__detail">
+                      <a href="#" class="product__name"
+                        >Thiết kế bản vẽ thi công
+                      </a>
+                      <div class="product__price">
+                        <p>
+                          Giá trị hợp đồng:<span class="product__originPrice">
+                            3,215,000,000₫</span
+                          >
+                        </p>
+                      </div>
+                      <p class="product__investor">
+                        Chủ đầu tư: Công ty TNHH Tư vấn và phát triển Công nghệ
+                        xây dựng Hưng Thịnh, xã Tân Mỹ , huyện Đức Hòa, Tỉnh
+                        Long An
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="collection__btns">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="btn-container">
+                  <a href="">
+                    <button class="btn-container__btn">Xem thêm</button>
+                  </a>
+                  <div class="btn-container__background"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ourmember section-area" id="ourmember">
+        <div class="container">
+          <div class="ourmember__top">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6">
+                <div class="section__top">
+                  <h2 class="section__top-header">Đội Ngũ Của Chúng Tôi</h2>
+                  <!-- <div class="section__top-note">
+                    Vận chuyển hàng hóa trong nước và quốc tế
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ourmember-list"
+            style="overflow-x: hidden; overflow-y: hidden"
+          >
+            <div class="row">
+              <div class="col-md-3" data-aos="zoom-in-up">
+                <div class="ourmember-item">
+                  <img
+                    src="./assets/images/member/member01.jpg"
+                    alt=""
+                    class="ourmember-img"
+                  />
+                  <div class="ourmember-infor">
+                    <h3 class="ourmember-infor__membername">James</h3>
+                    <h5 class="ourmember-infor__memberposition">
+                      Nhà sáng lập
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3" data-aos="zoom-in-up">
+                <div class="ourmember-item">
+                  <img
+                    src="./assets/images/member/member02.jpg"
+                    alt=""
+                    class="ourmember-img"
+                  />
+                  <div class="ourmember-infor">
+                    <h3 class="ourmember-infor__membername">JACK</h3>
+                    <h5 class="ourmember-infor__memberposition">Giám đốc</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3" data-aos="zoom-in-up">
+                <div class="ourmember-item">
+                  <img
+                    src="./assets/images/member/member03.jpg"
+                    alt=""
+                    class="ourmember-img"
+                  />
+                  <div class="ourmember-infor">
+                    <h3 class="ourmember-infor__membername">Davis</h3>
+                    <h5 class="ourmember-infor__memberposition">
+                      Trưởng phòng tài chính
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3" data-aos="zoom-in-up">
+                <div class="ourmember-item">
+                  <img
+                    src="./assets/images/member/member04.jpg"
+                    alt=""
+                    class="ourmember-img"
+                  />
+                  <div class="ourmember-infor">
+                    <h3 class="ourmember-infor__membername">Olivia</h3>
+                    <h5 class="ourmember-infor__memberposition">
+                      Trưởng phòng nhân sự
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__news" id="news">
+        <div class="container">
+          <h2 class="main__news-header">
+            <a href="#" class="collection__header-link">Tin tức </a>
+          </h2>
+          <div class="main__news-content">
+            <div class="row">
+              <ul class="main__news-list">
+                <li class="main__news-item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/news/photo-1498050108023-c5249f4df085.jpg"
+                      alt=""
+                      class="main__news-img"
+                    />
+                    <h3 class="main__news-title">
+                      Toàn Thịnh Phát chính thức xây dựng trang web của công ty
+                    </h3>
+                  </a>
+                </li>
+                <li class="main__news-item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/news/photo-1553392636-d15d8f919c8d.jpg"
+                      alt=""
+                      class="main__news-img"
+                    />
+                    <h3 class="main__news-title">
+                      Quy hoạch phân khu Khu vực Bắc kênh thoát lũ, thành phố
+                      Phan Thiết – huyện Hàm Thuận Bắc
+                    </h3>
+                  </a>
+                </li>
+                <li class="main__news-item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/news/download.png"
+                      alt=""
+                      class="main__news-img"
+                    />
+                    <h3 class="main__news-title">
+                      Quy hoạch xây dựng vùng huyện Đức Linh đến năm 2040
+                    </h3>
+                  </a>
+                </li>
+                <li class="main__news-item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/news/phan-thiet-o-tinh-nao-mien-nao.jpg"
+                      alt=""
+                      class="main__news-img"
+                    />
+                    <h3 class="main__news-title">
+                      Thẩm định giá bán, bán cho thuê căn hộ dự án Khu chung cư
+                      nhà ở xã hội tại phường Phú Tài, thành phố Phan Thiết
+                    </h3>
+                  </a>
+                </li>
+                <li class="main__news-item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/news/photo-1545324418-cc1a3fa10c00.jpg"
+                      alt=""
+                      class="main__news-img"
+                    />
+                    <h3 class="main__news-title">
+                      Các thông tin liên quan đến dự án: Khu nhà ở xã hội khu
+                      Công nghiệp Hàm Kiệm I – xã Hàm Mỹ, huyện Hàm Thuận Nam,
+                      tỉnh Bình Thuận
+                    </h3>
+                  </a>
+                </li>
+                <li class="main__news-item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/news/photo-1580216643062-cf460548a66a.jpg"
+                      alt=""
+                      class="main__news-img"
+                    />
+                    <h3 class="main__news-title">
+                      Thí nghiệm kiểm tra chất lượng của bê tông cọc khoan nhồi
+                    </h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collection__btns">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="btn-container">
+                  <a href="">
+                    <button class="btn-container__btn">Xem thêm</button>
+                  </a>
+                  <div class="btn-container__background"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section__contact" class="contact section-area">
+        <div class="container">
+          <div class="contact__top">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6">
+                <div class="section__top">
+                  <span>Liên hệ</span>
+                  <h2 class="section__top-header">Liên hệ với chúng tôi</h2>
+                  <!-- <div class="section__top-note">
+                Vận chuyển hàng hóa trong nước và quốc tế
+              </div>   -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container contact-form" style="overflow-x: hidden">
+            <div class="row">
+              <div class="col-md-4">
+                <ul class="content-text__list">
+                  <li class="content-text__item">
+                    <img
+                      src="./assets/img/icon/tomato_circle_phone.png"
+                      alt=""
+                      class="content-text__icon"
+                    />
+                    <div class="content-text__text">
+                      <h3 class="content-text__text-header">Hot Line</h3>
+                      <p>0918 148 939</p>
+                    </div>
+                  </li>
+                  <li class="content-text__item">
+                    <img
+                      src="./assets/img/icon/tomato_circle_email.png"
+                      alt=""
+                      class="content-text__icon"
+                    />
+                    <div class="content-text__text">
+                      <h3 class="content-text__text-header">Mail</h3>
+                      <p>minh.tvxd@yahoo.com.vn</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="contact-form__userinfor">
+                      <input type="text" placeholder="Họ và Tên" />
+                      <img
+                        src="./assets/img/icon/tomato_user.png"
+                        alt=""
+                        class="contact-form__icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="contact-form__userinfor">
+                      <input type="text" placeholder="Email" />
+                      <img
+                        src="./assets/img/icon/tomato_email.png"
+                        alt=""
+                        class="contact-form__icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="contact-form__userinfor">
+                      <input type="text" placeholder="Số điện thoại" />
+                      <img
+                        src="./assets/img/icon/tomato_phone.png"
+                        alt=""
+                        class="contact-form__icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="contact-form__userinfor">
+                      <input type="text" placeholder="Tiêu đề" />
+                      <img
+                        src="./assets/img/icon/tomato_input.png"
+                        alt=""
+                        class="contact-form__icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div
+                      class="
+                        contact-form__userinfor contact-form__userinfor-input
+                      "
+                    >
+                      <input
+                        type="text"
+                        placeholder="Nhập tin nhắn"
+                        class="contact-form__userinfor__input"
+                      />
+                      <!-- <img src="./assets/img/icon/tomato_input.png" alt="" class="contact-form__icon"> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-area__btn">
+              <button>
+                Gửi yêu cầu
+                <img
+                  src="./assets/img/icon/planes.png"
+                  class="section-area__btn-icon"
+                />
+              </button>
+            </div>
+          </div>
+          <img
+            src="./assets/img/imgs/Decoration/square_deco.png"
+            class="ordernow-decoration1"
+          />
+
+          <!-- <img src="./assets/img/imgs/Decoration/circle_deco.png" class="ordernow-decoration2"> -->
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_top">
+            <div class="row">
+              <div class="col-lg-8 col-md-6 col-12">
+                <div class="area_newsletter">
+                  <div class="title_newsletter">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h4>Đăng ký nhận tin</h4>
+                  </div>
+                  <div class="form_newsletter">
+                    <input placeholder="Nhập email của bạn" type="text" />
+                    <div class="btn-container">
+                      <button class="btn-container__btn">Xem thêm</button>
+                      <div class="btn-container__background"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="area_phone_contact">
+                  <p class="number_phone">
+                    <i class="fas fa-phone-square"></i>
+                    <span>Hotline mua hàng online</span>
+                    <a href="tel:0918148939">0918 148 939</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_support">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="footer_support-item">
+                  <div class="support-item_icon">
+                    <i class="fas fa-shipping-fast"></i>
+                  </div>
+                  <h3>Chính sách bảo hành</h3>
+                  <p>Hỗ trợ khắc phục miễn phí nếu đủ điều kiện</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="footer_support-item">
+                  <div class="support-item_icon">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
+                  <h3>Khuyến mại vật tư 2%</h3>
+                  <p>Đối với hợp đồng có giá trị ít nhất 1 tỷ đồng</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="footer_support-item">
+                  <div class="support-item_icon">
+                    <i class="fas fa-phone-volume"></i>
+                  </div>
+                  <h3>Hỗ trợ 24/7</h3>
+                  <p>0918 148 939</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_main">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer_main-item">
+                  <div class="support-item_header">
+                    <h3>Thông Tin Liên Hệ</h3>
+                  </div>
+                  <div class="support-item_content">
+                    <ul class="support-item_content-list">
+                      <li class="support-item_content-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Số 75 ,Nguyễn Công Trứ, phường Tân An, thị xã Lagi ,
+                        tỉnh Bình Thuận
+                      </li>
+                      <li class="support-item_content-item">
+                        <i class="fas fa-phone-square"></i>
+                        0918 148 939
+                      </li>
+                      <li class="support-item_content-item">
+                        <i class="fas fa-paper-plane"></i>
+                        minh.tvxd@yahoo.com.vn
+                      </li>
+                      <li class="support-item_content-item"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer_main-item">
+                  <div class="support-item_header">
+                    <h3>Hỗ Trợ</h3>
+                  </div>
+                  <div class="support-item_content">
+                    <ul class="support-item_content-list">
+                      <li class="support-item_content-item">Giới thiệu</li>
+                      <li class="support-item_content-item">Liên hệ</li>
+                      <li class="support-item_content-item">
+                        Hệ thống cửa hàng
+                      </li>
+                      <li class="support-item_content-item">
+                        Hướng dẫn chon size
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer_main-item">
+                  <div class="support-item_header">
+                    <h3>Chính Sách</h3>
+                  </div>
+                  <div class="support-item_content">
+                    <ul class="support-item_content-list">
+                      <li class="support-item_content-item">
+                        Điều khoản dịch vụ
+                      </li>
+                      <li class="support-item_content-item">
+                        Quy Định & Hình Thức Thanh Toán
+                      </li>
+                      <li class="support-item_content-item">
+                        Chính Sách Đổi Trả
+                      </li>
+                      <li class="support-item_content-item">
+                        Chính Sách Bảo Mật
+                      </li>
+                      <li class="support-item_content-item">
+                        Chính Sách Giao Hàng
+                      </li>
+                      <li class="support-item_content-item">
+                        Chính Sách Bảo Hành
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- boostraps -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery and slick slider -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- AOS animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
