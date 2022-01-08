@@ -133,11 +133,12 @@ body {
   border: none;
   font-size: 1.5rem;
   font-weight: bold;
+  // border: 1px solid tomato;
   text-transform: uppercase;
-  background-color: #1f2c8c;
-  color: white;
+  background-color: #1d44ee;
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .section-area__btn button:focus {

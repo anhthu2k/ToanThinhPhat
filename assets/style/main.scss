@@ -419,7 +419,9 @@ header {
 }
 .ourmember-img {
   width: 100%;
-  border-radius: 50%;
+  height: 400px;
+  object-fit: cover;
+  // border-radius: 50%;
   border: 0.2px solid var(--gradient-color-to);
   cursor: pointer;
 }
@@ -485,8 +487,9 @@ header {
 
 /* contact */
 .contact {
-  background-color: black;
-  color: white;
+  background-color: white;
+
+  color: black;
   height: 80vh;
   // display: none;
 }
@@ -542,18 +545,20 @@ header {
   background-color: transparent;
   height: 73px;
   border: none;
-  border-bottom: 1px solid white;
-  color: white;
+  // border-bottom: 1px solid white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 4px;
+  color: black;
   font-size: 1.8rem;
   font-weight: 600;
   padding: 0 50px 0 10px;
 }
 .contact-form__userinfor input::-webkit-input-placeholder {
-  color: white;
+  color: black;
 }
 .contact-form__userinfor input:focus {
   outline: none;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 .contact-form__icon {
   position: absolute;
@@ -568,11 +573,37 @@ header {
 
 .contact-form__userinfor.contact-form__userinfor-input
   input::-webkit-input-placeholder {
-  color: white;
+  color: black;
 }
 .contact .ordernow-decoration1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 0;
+}
+.container.contact-form {
+  padding: 30px 5px;
+  // box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.form {
+  // height: 100vh;
+  width: 700px;
+  font-size: 2rem;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+#inputPassword {
+  height: 100%;
+}
+.login__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.login__btn button {
+  font-size: 2rem;
+}
+.form input {
+  padding: 10px;
 }

@@ -159,10 +159,10 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #1f2c8c;
+  background-color: #1d44ee;
   color: white;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .section-area__btn button:focus {
