@@ -29,25 +29,6 @@ const App = {
       };
     });
 
-    // window.onscroll = function () {
-    //   // featured__img scroll
-    //   const h2Height = doc('.featured__img h2').clientHeight;
-    //   const imgHeight = doc('.featured__img img').clientHeight;
-    //   const featured__imgHeight = h2Height + imgHeight;
-    //   const B_collectionFeaturedOffsetTop =
-    //     collectionFeatured.offsetTop + featured__imgHeight / 2;
-    //   const A_windowScrollTop =
-    //     window.scrollY + window.innerHeight - featured__imgHeight / 2;
-    //   const distanceAB = B_collectionFeaturedOffsetTop - A_windowScrollTop;
-
-    //   if (distanceAB < 0) {
-    //     doc('.featured__img').classList.add('active');
-    //   }
-    //   if (distanceAB > -100) {
-    //     doc('.featured__img').classList.remove('active');
-    //   }
-    // };
-
     // slickkk
     // var myInput = document.getElementById('myInput');
 
